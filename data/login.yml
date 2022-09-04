@@ -1,0 +1,14 @@
+-
+  name: 测试登录
+  request:
+    method: post
+    url: http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun
+    data:
+      username: mhy123456
+      password: mhy123
+      csrf_token: ${token}
+      backurl: http://47.107.116.139/phpwind
+      invite: None
+    headers:
+      Accept: application/json, text/javascript, /; q=0.01
+      X-Requested-With: XMLHttpRequest

@@ -1,0 +1,10 @@
+- name: 获取统一鉴权码
+  parameters:
+    name: get_token_data.csv
+  request:
+    method: get
+    url: http://47.107.116.139/phpwind/
+    data: None
+  validate:
+    -equals: {status_code: 200}
+#    -contains: None
